@@ -1,0 +1,155 @@
+/* For all */
+*{
+    font-family:'Montserrat', sans-serif;
+    margin: 0%;
+}
+body{
+    background-color: white;
+    background-image: url(./media/Fondo.png);
+    background-size: 50rem;
+}
+/* CSS for the form page*/
+img#background_form{
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+}
+div#container_form{
+    width: 100%;
+    height: 100%;
+    background: black;
+    overflow: hidden;
+}
+.form{
+    width:340px;
+    height:440px;
+    background:#e6e6e6;
+    border-radius:8px;
+    box-shadow:0 0 40px -10px #000;
+    padding:20px 30px;
+    max-width:calc(100vw - 40px);
+    box-sizing:border-box;
+    position: absolute; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+h2{
+    margin:10px 0;
+    padding-bottom:10px;
+    width:180px;
+    color:#78788c;
+    border-bottom:3px solid #78788c
+}
+input{
+    width:100%;
+    padding:10px;
+    box-sizing:border-box;
+    background:none;
+    outline:none;
+    resize:none;
+    border:0;
+    font-family:'Montserrat',sans-serif;
+    transition:all .3s;
+    border-bottom:2px solid #bebed2
+}
+input:focus{
+    border-bottom:2px solid #78788c
+}
+p.p_form:before{content:attr(type);
+    display:block;
+    margin:28px 0 0;
+    font-size:14px;
+    color:#5a5a5a
+}
+button{
+    float:right;
+    padding:8px 12px;
+    margin:8px 0 0;
+    font-family:'Montserrat',sans-serif;
+    border:2px solid #78788c;
+    background:0;
+    color:#5a5a6e;
+    cursor:pointer;
+    transition:all .3s
+}
+button:hover{
+    background:#78788c;
+    color:#fff
+}
+details{
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 1%;
+}
+
+/* CSS for the index page*/
+nav#horizontal_navbar{
+    width: 100%;
+    height: 40px;
+    margin-top: 10px;
+    float: right;
+    background-color: black;
+}
+header#general_header{
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    z-index: 2;
+    background-color: black;
+}
+img#landing_logo{
+    float: left;
+    width: 6%;
+    margin-left: 1%;
+}
+button#boton_registro_usuario{
+    display: table-cell;
+    vertical-align: middle;
+    margin-right: 2%;
+    border:2px solid #78788c;
+    background:#78788c;
+    color:#5a5a6e;
+    cursor:pointer;
+    transition:all .3s
+}
+button#boton_registro_usuario:hover{
+    background:#5a5a6e;
+    color:#fff
+}
+a#irA_registro_usuario{
+    text-decoration: none;
+    color: black;
+    padding-right: 5%;
+    padding-left: 5%;
+    display: inline-block;
+    margin: auto;
+    font-size: 16px;
+}
+a#irA_registro_usuario:hover {
+    color: #fff;
+  }
+div#description_container{
+    position: absolute; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #e6e6e6;
+    border-radius: 2px;
+}
+p#description_text{
+    margin: 2%;
+    text-align: center;
+    text-shadow: black;
+}
+div.clear{
+    clear: both;
+}
+
+.valido {
+    color: #44E444;
+}
+   
+.invalido {
+    color: #FF0000;
+}
