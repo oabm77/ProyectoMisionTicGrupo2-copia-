@@ -5,25 +5,84 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cervezas Artesanales Colombianas</title>
-    <link href="estilo.css" rel="stylesheet" type="text/css" />
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <link href="css/estilo.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
-    <header id="general_header"><!-- Header -->
-        <nav id = "horizontal_navbar"><!-- Navigation bar -->
-            <img id="landing_logo" src="./media/Logo.png" alt="Logo image">
-            <button id="boton_registro_usuario">
-                <a id="irA_registro _usuario" href="./registro.html" target="_self">Registro</a>
-            </button>
+    <header class="header" id="home">
+        <img id="landing_logo" src="./media/Logo.png" alt="Logo image">
+        <img class="menu" src="./media/hamburguer.svg" alt="menu" >
+        <nav class="navigation-menu">
+            <a id="#register" href="./registro.html" target="_self">Registro</a>
+            <a href="#home">Inicio</a>
+            <a href="#services">Servicios</a>
+            <a href="#gallery">Galería</a>
+            <a href="#sales">Puntos de venta</a>
         </nav>
-        <div class="clear"></div>
+        <div class="container head">
+            <h1 class="title">Un producto 100% Colombiano</h1>
+            <p class="description"> 
+                Disfrute de las mejores cervezas artesanales colombianas producidas en las distintas regiones del país, fabricadas siguiendo los más altos estándares de calidad y clasificadas por su color, sabor, ingredientes, método de producción, receta, historia y origen. 
+                Esta página tiene como objetivo la promoción, venta y análisis de mercado de cervezas artesanales.
+            </p>
+       </div>
     </header>
-    <div id="description_container">
-        <p id="description_text"> Disfrute de las mejores cervezas artesanales colombianas producidas en las distintas regiones del país, 
-            fabricadas siguiendo los más altos estándares de calidad y clasificadas por su color, sabor, ingredientes, 
-            método de producción, receta, historia y origen. Esta página tiene como objetivo la promoción, venta y 
-            análisis de mercado de cervezas artesanales. Un producto 100% Colombiano. </p>
-   </div>
-   <div class="clear"></div>
+    <main>
+        <section class="services container" id="services">
+            <h2 class="subtitle">Nuestro Servicio</h2>
+            <div class="services_container">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, nam! Illo cum earum maiores quos modi quod possimus distinctio, obcaecati enim repellendus nobis placeat ex pariatur ratione? Quis, quod asperiores.
+                Rem suscipit ipsum natus dicta molestias cupiditate optio eos expedita. Inventore harum ab delectus vel maxime recusandae nostrum? Cumque ipsa odit ducimus, tempora consequuntur iste excepturi illo laborum esse incidunt?
+            </div>
+        </section>
+        <section class="gallery" id="gallery">
+            <div class="container">
+                <h2 class="subtitle">Galería</h2>
+                <div class="gallery_container">
+                    <img src="media/cerveza_bicla.jpeg" alt="cerveza Bicla" class="img_gallery">
+                    <img src="media/cerveza_bicla2.jpeg" alt="cerveza Bicla" class="img_gallery">
+                    <img src="media/cerveza_chalearte.jpeg" alt="cerveza Chalearte" class="img_gallery">
+                    <img src="media/cerveza_lamilagrosa.jpeg" alt="cerveza La Milagrosa" class="img_gallery">
+                    <img src="media/cerveza_lapoladelpub.jpeg" alt="cerveza La Pola del Pub" class="img_gallery">
+                    <img src="media/cerveza_melascraftbeer.jpeg" alt="cerveza Melas Craft Beer" class="img_gallery">
+                    <img src="media/cerveza_octane.jpeg" alt="cerveza Octane" class="img_gallery">
+                    <img src="media/cerveza_barbaros.jpeg" alt="cerveza Bárbaros" class="img_gallery">
+                </div>
+            </div>
+        </section>
+        <section class="img_light">
+            <img src="media/closelight.svg" alt="cerrar imagen" class="close">
+            <img src="" alt="agregar imagen" class="add_img">
+        </section>
+        <section class="sales container" id="sales">
+            <h2 class="subtitle">Puntos de Venta</h2>
+            <div class="sales_container">
+                <iframe width="600" height="500" id="gmap_canvas" src="https://www.google.com/maps/d/embed?mid=1YsT7Z-Ec4v67K-LVEFPMa1h6SVw_9tmF&hl=es&q=Colombia&t=&z=5&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+            </div>
+        </section>
+    </main>
+    <footer id="contact">
+        <div class="container footer-content">
+            <div class="contact-us">
+                <h2 class="brand">POLA-$HOP</h2>
+                <p>Expertos en promoción y comercialización de cerveza artesanal</p>
+            </div>
+            <div class="social-media">
+                <a href="./" class="social-media-icon">
+                    <i class='bx bxl-facebook'></i>
+                </a>
+                <a href="./" class="social-media-icon">
+                    <i class='bx bxl-twitter' ></i>
+                </a>
+                <a href="./" class="social-media-icon">
+                    <i class='bx bxl-instagram' ></i>
+                </a>
+            </div>
+        </div>
+        <div class="line"></div>
+    </footer>    
+    <script src="js/menu.js"></script>
+    <script src="js/gallery.js"></script>
 </body>
 </html>
